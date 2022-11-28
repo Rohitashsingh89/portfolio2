@@ -1,0 +1,19 @@
+{
+    "parameters" :
+    {
+        "local_server" : "True",
+        "local_uri" : "mysql://root:@localhost/rohitashsingh",
+        "production_uri" : "mysql://root:@localhost/rohitashsingh",
+        "fb_url" : "https://www.facebook.com/rrr",
+        "git_url" : "https://www.github.com/rrr",
+        "lk_url" : "https://www.linkedin.com/rrr",
+        "blog_name" : "R R R",
+        "gmail_user" : "rohitashsinghcs20@bsacet.org",
+        "gmail_password" : "schgnishsatihor#0987",
+        "about_text" : "hey We are community of R R R. We are developer and programmer we have created this Amazing website",
+        "no_of_posts" : 2,
+        "admin_user" : "Rohitash Singh",
+        "admin_password" : "123456",
+        "upload_location" : "D:\\PROGRAMS\\flask\\tutorial\\portfolio\\static"
+    }
+}

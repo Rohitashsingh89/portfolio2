@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>My Portfolio</title> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title> {% block title %} {% endblock %} - portfolio </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='python.css')}}"> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="headsec">
+        <div class="header">
+            <!-- <div class="menuhead"> -->
+                <div class="logo">
+                    <h2><a href="/">{{parameters['blog_name']}}</a> </h2>
+                </div>
+            <div class="righthead">
+                <ul>
+                    <li class="right bodonhover">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="right bodonhover">
+                        <a href="/about">about</a>
+                    </li>
+                    <li class="right bodonhover">
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li class="right bodonhover">
+                        <a href="/contact">Contact Us</a>
+                    </li>
+
+                    <li class="right bodonhover">
+                        <div class="dropdown">
+                            <a href="">features</a>
+                            <div class="dropdown-content">
+                                <a href="/qrgenerator">QR Generator</a>
+                                <a href="/bgremover">BG Remover</a>
+                            </div>
+                        </div>
+                          
+                    </li>
+                    <!-- <li class="right bodonhover">
+                        <a href="index.html">Recommender</a>
+                    </li> -->
+                </ul>
+                <div class="loginbtn">
+                    <a href="/login"> <button class="btn" id="login">Login </button></a>
+                    <a href="/signup"> <button class="btn" id="signup">Signup</button> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav" style="margin-top: 25px;">
+            <div class="home">
+                <a href="/">
+                <i class="fa fa-home pointer" style="background-color: aliceblue;color:rgb(29, 29, 210);"></i> </a></button>
+            </div>
+            <div class="midnav">
+                <div class="lang bodonhover">
+                    <a href="/python">PYTHON </a>
+                </div>
+                <div class="lang bodonhover">
+                    <a href="/ml">ML</a>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="fa fa-search pointer" style="background-color: aliceblue;color:rgb(29, 29, 210);"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    {% block body %} 
+
+
+    {% endblock %} 
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

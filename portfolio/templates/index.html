@@ -1,0 +1,123 @@
+{% extends "base.html" %} 
+{% block title %}Home {% endblock %}
+{% block body %} 
+    <div class="container">
+        <div class="contentbox">
+            <div class="card">
+                <div class="left">
+                    <h2 class="head">R R R </h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae laboriosam alias ad quaerat,
+                        adipisci amet magni maxime sapiente eius doloremque voluptate fugiat porro tenetur incidunt
+                        obcaecati. Facere exercitationem molestias quo.
+                    </p>
+                    <div class="btncontainer">
+                        <button class="bttn pointer" id="cv">Download CV</button>
+                        <a href="/blog"> <button class="bttn pointer" id="blog">Blogs</button> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="{{ url_for('static', filename='code2.png') }} ">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- <p class="m-t m-l-2"><u>our</u> course</p> -->
+        <h1 class="m-t m-l-2 text-align-center m-b">Featured Courses</h1>
+        <div class="boxcontainer">
+            <div class="box">
+                <a href="/numpy">
+                <img src="{{ url_for('static', filename='Numpy.png') }}" class="box-image" alt="Numpy image"> </a>
+                <span class="m-l-2 free-course">Free course</span>
+                <div class="m-l-2 m-b m-t-half course-tut">Numpy Tutorial</div>
+                <div class="text m-l-2 m-b m-r text-p">
+                    Numpy is a free and open-source python library, which mainly used to deals with arrays or matrices
+                </div>
+                <a href="/numpy">
+                <button class="btn m-l-2 btn-pos m-b-10"> Read more</button></a>
+            </div>
+            <div class="box">
+                <a href="/pandas">
+                <img src="{{ url_for('static', filename='pandas.png') }}" class="box-image" alt="pandas image"></a>
+                <span class="m-l-2 free-course">Free course</span>
+                <div class="m-l-2 m-b m-t-half course-tut">Pandas Tutorial</div>
+                <div class="text m-l-2 m-b m-r text-p">
+                    pandas is a free and open-source python library, which  is mainly focus on Series and Dataframe
+                </div>
+                <a href="/pandas">
+                <button class="btn m-l-2 btn-pos m-b-10">Read more</button> </a>
+            </div>
+            <div class="box">
+                <a href="/python">
+                <img src="{{ url_for('static', filename='python.png') }}" class="box-image" alt="python image"> </a>
+                <span class="m-l-2 free-course">Free course</span>
+                <div class="m-l-2 m-b m-t-half course-tut">Python Tutorial</div>
+                <div class="text m-l-2 m-b m-r text-p">
+                    Python is a high level, Intrepreted, Object Oriented Programming language
+                </div>
+                <a href="/python">
+                <button class="btn m-l-2 btn-pos m-b-10">Read more</button> </a>
+            </div>
+        </div>
+    </div> 
+
+    <div class="footercontainer">
+        <div class="footer">
+            <div class="name">
+                <h1>R R R</h1>
+                <p>Thank you for choosing and supporting us!</p>
+            </div>
+            <div class="fcontainer">
+                <div class="feature">
+                    <div class="fhead">Languages</div>
+                    <p>Python </p>
+                    <p>Java </p>
+                    <p> C </p>
+                    <p>SQL </p>
+                    <p>CPP </p>
+                    <p> JavaScript </p>
+                </div>
+                <div class="blog">
+                    <div class="fhead">
+                        <!-- <a href="contact.html">Contribute</a> -->
+                        Contribute
+                    </div>
+                    <p>Write an artile</p>
+                    <p>Improve an article</p>
+                </div>
+                <div class="information">
+                    <div class="fhead">information</div>
+                    <p>About Us</p>
+                    <p>Our Charter</p>
+                    <p>Our Research</p>
+                    <p>Publications</p>
+                    <p>Newsroom</p>
+                    <p>Careers</p>
+                </div>
+                <div class="connect">
+                    <div class="fhead">Conect with us on </div>
+                    <div class="media">
+                        <div class="face">
+                            <i class="fa fa-github pointer px"></i>
+                            </button>
+                        </div>
+                        <div class="face">
+                            <i class="fa fa-linkedin pointer px"></i>
+                            </button>
+                        </div>
+                        <div class="face">
+                            <i class="fa fa-twitter pointer px"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+{% endblock body %}

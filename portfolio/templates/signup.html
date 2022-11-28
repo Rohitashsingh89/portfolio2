@@ -1,0 +1,38 @@
+{% extends "base.html" %} 
+{% block title %}signup {% endblock %}
+{% block body %} 
+
+
+    <div class="container mx-auto">
+        <div class="content mx-auto"> 
+            <div class="form">
+                <form action="/" method="POST">
+                    <div class="formcontainer">
+                        <h1 class="my">Signup </h1>
+                        <p>First Name</p> <input type="text" name="fname" id="fname" class="inputbox" placeholder="enter your first name">
+                        <p>Last Name</p> <input type="text" name="lname" id="lname" class="inputbox" placeholder="enter your last name">
+                        <p class="mx">Email </p>
+                        <input type="email" name="email" id="email" class="inputbox my" placeholder="enter your mail ">
+                        <p class="">password </p> 
+                        <input type="password" name="password" id="password" class="inputbox my" placeholder="enter your password">
+                        <p class="">Confirm password </p> 
+                        <input type="password" name="password" id="password" class="inputbox my" placeholder="confirm your password">
+                        <input type="button" value="Register" name="submit" class="btn mx my btn2 inputbox" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+  <div class="loginfooter mt-4">
+    <div class="loginfcontainer">
+      Contact us on     
+        <a href="{{parameters['git_url']}}" target="_blank"> <div class="fa fa-github pointer m-l bg"></div></a>
+        <a href="{{parameters['lk_url']}}" target="_blank"> <div class="fa fa-linkedin pointer m-l bg"></div></a>
+        <a href="{{parameters['fb_url']}}" target="_blank"> <div class="fa fa-facebook pointer m-l bg"></div></a>
+      </div>
+    </div>
+    
+
+
+{% endblock body %}

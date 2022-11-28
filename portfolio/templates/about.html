@@ -1,0 +1,42 @@
+{% extends "base.html" %} 
+{% block title %}About {% endblock %}
+{% block body %} 
+
+
+    <div class="container mx-auto">
+        <div class="content mx-auto"> 
+                    <div class="formcontainer">
+                        <p>{{parameters['about_text']}}</p>
+                        <div class="image2 mx pt-4 ">
+                        <img src="{{ url_for('static', filename='Rohitah.png')}}" alt="Rohitash Singh Picture" class="image2 my">
+                        <p>Rohitash Singh</p>
+                        <p class="post-meta">developer & engineer</p>
+                        </div>
+                        <div class="image2 mx pt-4">
+                        <img src="{{ url_for('static', filename='Rajesh.jpg')}}" alt="Rajesh kumar image" class="image2 my">
+                        <p>Rajesh Kumar</p>
+                        <p class="post-meta">developer & engineer</p>
+                       </div>
+                        <div class="image2 mx pt-4">
+                        <img src="{{ url_for('static', filename='Rasu.jpg')}}" alt="Ras bihari image" class="image2 my">
+                        <p>Ras Bihari</p>
+                        <p class="post-meta">developer & engineer</p>
+                       </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+        
+  <div class="loginfooter mt-4">
+    <div class="loginfcontainer">
+      Contact us on     
+        <a href="{{parameters['git_url']}}" target="_blank"> <div class="fa fa-github pointer m-l bg"></div></a>
+        <a href="{{parameters['lk_url']}}" target="_blank"> <div class="fa fa-linkedin pointer m-l bg"></div></a>
+        <a href="{{parameters['fb_url']}}" target="_blank"> <div class="fa fa-facebook pointer m-l bg"></div></a>
+      </div>
+    </div>
+    
+
+
+{% endblock body %}

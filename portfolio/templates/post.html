@@ -1,0 +1,45 @@
+{% extends "base.html" %} 
+{% block title %}blog {% endblock %}
+{% block body %} 
+
+
+    <div class="container mx-auto">
+        <div class="blogcontent mx-auto"> 
+
+            <!-- here we fetch blog title, author name, date, content from database and use for loop to print alteat 4 blog -->
+            <div class="blogcontainer">
+                    <div class="content">
+                        <h1 class="post-title my-half">  {{ post.title }}</h1>
+                        <p class="tagline ">{{ post.tagline }}</p>
+                        <p class="post-meta mx-half my ">posted by Admin on {{post.date}}</p>
+                      </div>
+                      <hr>
+                      <article>
+                        <div class="content">
+                          <p class="post-content">{{post.content}}</p>
+                        </div>
+                      </article>
+
+                    <!-- Pager button  -->
+                    <div class="pagerbtn mx">
+                        <a class="btn btn3 float-left" href="{{prev}}"> &larr; PREVIOUS </a>
+                        <a class="btn btn3 float-right" href="{{next}}">NEXT  &rarr; </s></a>
+                    </div>
+                    
+                </div>
+
+        </div>
+    </div>
+        
+  <div class="loginfooter mt-4">
+    <div class="loginfcontainer">
+      Contact us on     
+        <a href="{{parameters['git_url']}}" target="_blank"> <div class="fa fa-github pointer m-l bg"></div></a>
+        <a href="{{parameters['lk_url']}}" target="_blank"> <div class="fa fa-linkedin pointer m-l bg"></div></a>
+        <a href="{{parameters['fb_url']}}" target="_blank"> <div class="fa fa-facebook pointer m-l bg"></div></a>
+      </div>
+    </div>
+    
+
+
+{% endblock body %}

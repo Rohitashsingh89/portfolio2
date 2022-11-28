@@ -1,0 +1,274 @@
+{% extends "base.html" %} 
+{% block title %}python {% endblock %}
+{% block body %} 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='python.css')}}">
+
+<div class="container sticky">
+    <div class="contentbox sticky">
+
+    <!-- <div class="headsec sticky">
+        <div class="header">
+            
+            <div class="logo">
+                <h2><a href="/portfolio/code_files/template/index.html">Rohitash Singh</a> </h2>
+            </div>
+            <div class="righthead">
+                <ul>
+                    <li class="right bodonhover">
+                        <a href="/portfolio/portfolio 2.0/template/index.html">Home</a>
+                    </li>
+                    <li class="right bodonhover">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="right bodonhover">
+                        <a href="/portfolio/portfolio 2.0/Blog/blog.html">Blog</a>
+                    </li>
+                    <li class="right bodonhover">
+                        <a href="/portfolio/portfolio 2.0/template/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="loginbtn">
+                    <button class="btn" id="login">Login</button>
+                    <button class="btn" id="signup">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container ">
+        <div class="card">
+            <div class="sidebar sticky ">
+                <ul>
+                    <div>
+                        <li class="font_bold pt-3 text_weight">
+                            INTRODUCTION
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            Variable
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                <p >Multiple Assingment</p>
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            conditional
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            loops
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            Switch case
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            INTRODUCTION TO OOPS
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            INHERITENCE
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <li class="font_bold text_weight">
+                            INCAPSULATION
+                        </li>
+                        <div>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                            <li class="pl-2">
+                                Python Tutorial
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="pycontent">
+                <div class="t_btn">
+                    <!-- previous and next button  -->
+                    <button class="btn top-leftbtn" id="previous">Previous</button>
+                    <button class="btn top-rightbtn" id="next">Next</button>
+                </div>
+                <div class="article">
+                    <div class="heading">
+                        Introduction to Python
+                    </div>
+                    <div class="Normal-text">
+                        <p>i am article
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nesciunt sed impedit, suscipit
+                            rem
+                            cumque quasi? Et eius, ullam voluptates veritatis quibusdam odit sit nemo tempora minima
+                            nisi
+                            repudiandae voluptatem.
+                        </p>
+                    </div>
+                    <div class="heading">
+                        variable
+                    </div>
+                    <div class="Normal-text">
+                        <p>
+                            Variables are nothing but reserved memory locations to store values. It means that when you create a variable, you reserve some space in the memory.  
+                        </p>
+                        <p>
+                            Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to the variables, you can store integers, decimals or characters in these variables.  
+                        </p>
+                    </div>
+                    <div class="heading">
+                        Assigning Values to Variables
+                    </div>
+                    <div class="Normal-text">
+                        <p>
+                            Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.  
+                        </p>
+                        <p>
+                            The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable.  
+                        </p>
+                        <p>
+                            For example-
+                        </p>
+                        <div class="example">
+                            <p>counter = 100</p>
+                            <p> miles = 1000.0</p>
+                            <p>name = "John"</p>
+                            <p>print (counter)</p>
+                            <p>print (miles)</p>
+                            <p>print (name)</p>
+                        </div>
+                        <p>
+                            Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively. This produces the following result -  
+                        </p>
+                        <div class="example">
+                            <p>100</p>
+                            <p>1000.0</p>
+                            <p>John</p>
+                        </div>
+                    </div>
+                    <div class="Normal-text">
+                        <div class="heading">
+                            <p>Multiple Assingment</p>
+                        </div>
+                        <p>
+                            Python allows you to assign a single value to several variables simultaneously.
+                        </p>
+                        <p>
+                            For example-
+                        </p>
+                        <p>
+                            a = b = c = 1
+                        </p>
+                        <p>
+                            Here, an integer object is created with the value 1, and all the three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables.  
+                        </p>
+                        <p>
+                            For example-
+                        </p>
+                        <p>
+                            a, b, c = 1, 2, 'John'
+                        </p>
+                        <p>
+                            Here, two integer objects with values 1 and 2 are assigned to the variables a and b respectively, and one string object with the value "john" is assigned to the variable c.
+                        </p>
+                    </div>
+                    <div class="Normal-text">
+                        <div class="heading">
+                            Standard Data Types
+                        </div>
+                        <p>
+                            The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard data types that are used to define the operations possible on them and the storage method for each of them.
+                        </p>
+                        <p>
+                            Python has five standard data types-
+                        </p>
+                        <p>
+                            <ul>
+                                <li>Numbers</li>
+                                <li>String</li>
+                                <li>list</li>
+                                <li>tuple</li>
+                                <li>set</li>
+                                <li>Dictionary</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="b_btn">
+                    <!-- previous and next button  -->
+                    <button class="btn bottom-leftbtn" id="previous">Previous</button>
+                    <button class="btn bottom-rightbtn" id="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

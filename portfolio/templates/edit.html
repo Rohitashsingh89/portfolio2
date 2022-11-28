@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+{% block title %}Edit {% endblock %}
+{% block body %} 
+
+
+    <div class="container mx-auto">
+        <div class="content mx-auto"> 
+          <div class="formcontainer">
+            <h1>Basic Actions</h1>  <hr> 
+            
+            <a href="/dashboard"> <button class="btn btn3 my mx "> DASHBOARD HOME </button></a>
+            <a href="/logout"> <button class="btn btn3 my">LOGOUT</button> </a>      <hr>       
+              
+              <div class="form">
+                  <form action="/edit/{{post.sno}}" method="POST">
+              <div class="content">  
+                          <h1 class="">Edit Post</h1> <hr>
+                          <p class="mx">Title</p> <input type="text" name="title" id="title" class="inputbox" placeholder="" value="{{post.title}}">
+                          <p>Tagline</p> <input type="text" name="tline" id="tline" class="inputbox" placeholder="" value="{{post.tagline}}">
+                          <p class="mx">slug </p>
+                          <input type="text" name="slug" id="slug" class="inputbox my" placeholder="" value="{{post.slug}}">
+                          <p class="">content </p>
+                          <textarea name="content" id="content" cols="30" rows="10" class="inputbox my">{{post.content}} </textarea> 
+                          <!-- <input type="text" name="content" id="content" class="inputbox my" placeholder="" value="{{post.content}}"> -->
+                          <!-- <p class=""> Image file </p>  -->
+                          <!-- <input type="image" name="img_file" id="img_file" class="inputbox my" placeholder="" value="{{post.img_file}}"> -->
+                          
+                          <button type="submit" name="submit" id="submit" class="btn mx my btn2  inputbox">Edit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+  <div class="loginfooter mt-4">
+    <div class="loginfcontainer">
+      Contact us on     
+        <a href="{{parameters['git_url']}}" target="_blank"> <div class="fa fa-github pointer m-l bg"></div></a>
+        <a href="{{parameters['lk_url']}}" target="_blank"> <div class="fa fa-linkedin pointer m-l bg"></div></a>
+        <a href="{{parameters['fb_url']}}" target="_blank"> <div class="fa fa-facebook pointer m-l bg"></div></a>
+      </div>
+    </div>
+    
+
+
+{% endblock body %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %} 
+{% block title %}login {% endblock %}
+{% block body %} 
+
+
+    <div class="container mx-auto">
+        <div class="content mx-auto"> 
+            <div class="form">
+                <form action="/dashboard" method="POST">
+                    <div class="formcontainer">
+                        <h1 class="my">Admin login </h1>
+                        <p class="mx">User Name  </p>
+                        <input type="text" name="uname" id="uname" class="inputbox my" placeholder="enter your name">
+                        <p class="">password </p> 
+                        <input type="password" name="password" id="password" class="inputbox my" placeholder="enter your password">
+                        <button type="submit" name="submit" id="submit" class="btn mx my btn2 inputbox">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+  <div class="loginfooter mt-4">
+    <div class="loginfcontainer">
+      Contact us on     
+        <a href="{{parameters['git_url']}}" target="_blank"> <div class="fa fa-github pointer m-l bg"></div></a>
+        <a href="{{parameters['lk_url']}}" target="_blank"> <div class="fa fa-linkedin pointer m-l bg"></div></a>
+        <a href="{{parameters['fb_url']}}" target="_blank"> <div class="fa fa-facebook pointer m-l bg"></div></a>
+      </div>
+    </div>
+    
+
+
+{% endblock body %}

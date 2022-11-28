@@ -1,0 +1,61 @@
+{% extends "base.html" %} 
+{% block title %}dashboard {% endblock %}
+{% block body %} 
+
+
+    <div class="container mx-auto">
+        <div class="blogcontent mx-auto"> 
+
+            <div class="blogcontainer">
+                    <div class="content">
+                        <h2 class="my">Admin Panel</h2> <hr>
+                        <p class="">Basic Actions</p> <hr>
+                        <a href="/edit/0"> <button class="btn btn3 my mx">ADD A NEW POST</button> </a>                               
+                        <a href="/logout"> <button class="btn btn3 my">LOGOUT</button> </a>                               
+                        <hr>
+                        <p>Upload A file</p>
+                        <form action="/uploader" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="file" id="file"> 
+                            <button type="submit" class="btn btn3 my">Submit</button>
+                        </form> <hr>
+                        <h2 class="my">Edit post</h2>
+                        <hr>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sno.</th>
+                                    <th>title</th>
+                                    <th>Date</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead> 
+                            <tbody>
+                                {% for post in post %}
+                                <tr>
+                                    <td>{{post.sno}}</td>
+                                    <td>{{post.title}}</td>
+                                    <td>{{post.date}}</td>
+                                    <td><a href="/edit/{{post.sno}}"> <button class="btn btn3">Edit</button> </a></td>
+                                    <td><a href="/delete/{{post.sno}}"> <button class="btn btn3">Delete</button> </a></td> 
+                                </tr> 
+                                {% endfor %} 
+                            </tbody>
+                        </table> <hr>
+                    </div>
+
+        </div>
+    </div>
+        
+  <div class="loginfooter mt-4">
+    <div class="loginfcontainer">
+      Contact us on     
+        <a href="{{parameters['git_url']}}" target="_blank"> <div class="fa fa-github pointer m-l bg"></div></a>
+        <a href="{{parameters['lk_url']}}" target="_blank"> <div class="fa fa-linkedin pointer m-l bg"></div></a>
+        <a href="{{parameters['fb_url']}}" target="_blank"> <div class="fa fa-facebook pointer m-l bg"></div></a>
+      </div>
+    </div>
+    
+
+
+{% endblock body %}
